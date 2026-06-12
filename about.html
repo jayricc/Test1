@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Pixel Verdict</title>
+  <meta name="description" content="Learn about Pixel Verdict, our review process, and our scoring system." />
+  <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    .about-page { padding: 3.5rem 0 5rem; }
+    .about-page h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.25rem; color: var(--text); }
+    .about-page h2 { font-size: 1.5rem; color: var(--accent-cyan); margin: 2.5rem 0 0.9rem; }
+    .about-page p  { color: #cbd5e1; line-height: 1.8; margin-bottom: 1.1rem; font-size: 1rem; max-width: 760px; }
+    .about-page ul { list-style: disc; padding-left: 1.5rem; color: #cbd5e1; font-size: 1rem; line-height: 1.9; max-width: 720px; }
+    .about-page li { margin-bottom: 0.3rem; }
+    .score-key { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1.25rem; max-width: 640px; margin-top: 0.5rem; }
+    .score-key dt { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 0.95rem; }
+    .score-key dd { color: #cbd5e1; font-size: 0.95rem; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav-inner">
+      <a href="index.html" class="logo">Pixel Verdict</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container about-page">
+      <h1>About Pixel Verdict</h1>
+
+      <p>
+        Pixel Verdict is an independent video game review publication dedicated to honest, thoughtful
+        analysis of the games that matter. We believe that a great review does more than assign a
+        number — it articulates <em>why</em> a game resonates, what it achieves, where it stumbles,
+        and who it is for.
+      </p>
+
+      <h2>Our Review Philosophy</h2>
+      <p>
+        Every game on this site is played to completion — or as close to it as the experience demands.
+        We spend meaningful time with each title before putting a single word on the page. Side quests,
+        multiplayer modes, difficulty options, and post-launch patches all factor into our final scores.
+        We do not accept review copies in exchange for positive coverage; all scores reflect our genuine
+        assessment.
+      </p>
+      <p>
+        We approach each game on its own terms. A tight six-hour narrative experience is not judged by
+        the same yardstick as a hundred-hour open-world epic. Context — genre conventions, development
+        budget, and stated ambitions — always informs our critique.
+      </p>
+
+      <h2>Scoring System</h2>
+      <p>Our scores run from 1.0 to 10.0. Here is what each band means:</p>
+      <dl class="score-key">
+        <dt><span class="score-badge score-green">9–10</span></dt>
+        <dd>Masterpiece. Essential playing for anyone who cares about games as a medium.</dd>
+        <dt><span class="score-badge score-teal">8–8.9</span></dt>
+        <dd>Excellent. Minor flaws that don't detract from an outstanding experience.</dd>
+        <dt><span class="score-badge score-yellow">6–7.9</span></dt>
+        <dd>Good to Decent. Solid and enjoyable, but held back by noticeable issues.</dd>
+        <dt><span class="score-badge score-red">Below 6</span></dt>
+        <dd>Mediocre or Poor. Significant problems that temper or ruin the experience.</dd>
+      </dl>
+
+      <h2>What We Cover</h2>
+      <p>
+        Our focus is on major releases across PC, PlayStation, Xbox, and Nintendo platforms. We
+        prioritise games with significant cultural footprint or critical interest — titles that drive
+        conversation in the broader gaming community. We also periodically revisit older games with
+        retrospective reviews when a significant update, sequel, or anniversary brings renewed attention.
+      </p>
+
+      <h2>Independence</h2>
+      <p>
+        Pixel Verdict is reader-supported. We have no financial relationship with any publisher,
+        developer, or platform holder. Our scores are never adjusted based on advertising, access,
+        or relationships. If a game is bad, we say so — regardless of how anticipated or well-funded it was.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">Pixel Verdict</a>
+      <p class="footer-copy">
+        &copy; 2024 Pixel Verdict &mdash; Honest game reviews, no sponsored content.
+        &nbsp;|&nbsp;
+        <a href="index.html">Home</a> &nbsp;&bull;&nbsp;
+        <a href="about.html">About</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
