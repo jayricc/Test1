@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Verdict — Video Game Reviews</title>
+  <meta name="description" content="Honest, in-depth video game reviews from dedicated players. Scores, pros, cons, and detailed analysis for every major release." />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- ── Site Header ── -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="logo">PIXEL VERDICT</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero: Featured Review (Elden Ring) ── -->
+  <section class="hero" aria-label="Featured review">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-label">Featured Review</span>
+        <h1 class="hero-title">Elden Ring</h1>
+        <p class="hero-genre">Action RPG &nbsp;·&nbsp; PC / PS5 / Xbox</p>
+        <p class="hero-excerpt">
+          FromSoftware's open-world magnum opus redefines what the studio is capable of. A sprawling, interconnected world filled with secrets, spectacle, and some of the most punishing — yet rewarding — combat encounters ever designed.
+        </p>
+        <div class="hero-actions">
+          <a href="reviews/elden-ring.html" class="btn btn-primary">Read Full Review →</a>
+          <span class="hero-score-display">9.8 / 10</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Main Content ── -->
+  <main class="container" id="reviews">
+
+    <!-- Section heading -->
+    <div class="section-header">
+      <h2>Latest Reviews</h2>
+      <span class="section-divider" aria-hidden="true"></span>
+    </div>
+
+    <!-- Filters -->
+    <div class="controls" role="search">
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search reviews…"
+          aria-label="Search game reviews"
+          autocomplete="off"
+        />
+      </div>
+
+      <select id="genre-filter" aria-label="Filter by genre">
+        <option value="">All Genres</option>
+        <option value="action rpg">Action RPG</option>
+        <option value="action-adventure">Action-Adventure</option>
+        <option value="rpg">RPG</option>
+        <option value="roguelike">Roguelike</option>
+      </select>
+
+      <span class="results-count" id="results-count" aria-live="polite"></span>
+    </div>
+
+    <!-- Review Cards Grid -->
+    <div class="reviews-grid" aria-label="Review cards">
+
+      <!-- 1. Elden Ring -->
+      <article class="review-card" data-title="elden ring" data-genre="action rpg">
+        <div class="card-cover cover-elden-ring" aria-hidden="true">
+          <span class="card-cover-title">ELDEN RING</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-genre">Action RPG</span>
+            <span class="card-date">Feb 25, 2022</span>
+          </div>
+          <h3 class="card-title">
+            <a href="reviews/elden-ring.html">Elden Ring</a>
+          </h3>
+          <p class="card-excerpt">
+            FromSoftware's open-world masterpiece — a vast, brutal, and breathtakingly beautiful adventure that stands as one of the greatest games ever made.
+          </p>
+          <div class="card-footer">
+            <div class="card-score-wrap">
+              <span class="card-score-label">Score</span>
+              <span class="score-badge" data-score="9.8">9.8</span>
+            </div>
+            <a href="reviews/elden-ring.html" class="card-link">Read Review →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Zelda TotK -->
+      <article class="review-card" data-title="the legend of zelda tears of the kingdom zelda totk" data-genre="action-adventure">
+        <div class="card-cover cover-zelda-totk" aria-hidden="true">
+          <span class="card-cover-title">ZELDA: TEARS OF THE KINGDOM</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-genre">Action-Adventure</span>
+            <span class="card-date">May 12, 2023</span>
+          </div>
+          <h3 class="card-title">
+            <a href="reviews/zelda-totk.html">The Legend of Zelda: Tears of the Kingdom</a>
+          </h3>
+          <p class="card-excerpt">
+            Nintendo raises the bar for open-world design with ingenious building mechanics and a sky-high sense of wonder that surpasses even Breath of the Wild.
+          </p>
+          <div class="card-footer">
+            <div class="card-score-wrap">
+              <span class="card-score-label">Score</span>
+              <span class="score-badge" data-score="9.7">9.7</span>
+            </div>
+            <a href="reviews/zelda-totk.html" class="card-link">Read Review →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. God of War Ragnarök -->
+      <article class="review-card" data-title="god of war ragnarok" data-genre="action-adventure">
+        <div class="card-cover cover-god-of-war" aria-hidden="true">
+          <span class="card-cover-title">GOD OF WAR RAGNARÖK</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-genre">Action-Adventure</span>
+            <span class="card-date">Nov 9, 2022</span>
+          </div>
+          <h3 class="card-title">
+            <a href="reviews/god-of-war-ragnarok.html">God of War Ragnarök</a>
+          </h3>
+          <p class="card-excerpt">
+            Santa Monica Studio delivers a deeply emotional and visually spectacular sequel that expands Kratos and Atreus's journey across all Nine Realms.
+          </p>
+          <div class="card-footer">
+            <div class="card-score-wrap">
+              <span class="card-score-label">Score</span>
+              <span class="score-badge" data-score="9.5">9.5</span>
+            </div>
+            <a href="reviews/god-of-war-ragnarok.html" class="card-link">Read Review →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Baldur's Gate 3 -->
+      <article class="review-card" data-title="baldur's gate 3 baldurs gate" data-genre="rpg">
+        <div class="card-cover cover-baldurs-gate" aria-hidden="true">
+          <span class="card-cover-title">BALDUR'S GATE 3</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-genre">RPG</span>
+            <span class="card-date">Aug 3, 2023</span>
+          </div>
+          <h3 class="card-title">
+            <a href="reviews/baldurs-gate-3.html">Baldur's Gate 3</a>
+          </h3>
+          <p class="card-excerpt">
+            Larian Studios achieves the impossible: a faithful D&amp;D adaptation that's also the most reactive, replayable, and narratively rich RPG in a generation.
+          </p>
+          <div class="card-footer">
+            <div class="card-score-wrap">
+              <span class="card-score-label">Score</span>
+              <span class="score-badge" data-score="9.9">9.9</span>
+            </div>
+            <a href="reviews/baldurs-gate-3.html" class="card-link">Read Review →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Hades -->
+      <article class="review-card" data-title="hades" data-genre="roguelike">
+        <div class="card-cover cover-hades" aria-hidden="true">
+          <span class="card-cover-title">HADES</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-genre">Roguelike</span>
+            <span class="card-date">Sep 17, 2020</span>
+          </div>
+          <h3 class="card-title">
+            <a href="reviews/hades.html">Hades</a>
+          </h3>
+          <p class="card-excerpt">
+            Supergiant's genre-defining roguelike weaves a compelling narrative through endless runs, proving that repetition and storytelling are not mutually exclusive.
+          </p>
+          <div class="card-footer">
+            <div class="card-score-wrap">
+              <span class="card-score-label">Score</span>
+              <span class="score-badge" data-score="9.3">9.3</span>
+            </div>
+            <a href="reviews/hades.html" class="card-link">Read Review →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Cyberpunk 2077 -->
+      <article class="review-card" data-title="cyberpunk 2077" data-genre="action rpg">
+        <div class="card-cover cover-cyberpunk" aria-hidden="true">
+          <span class="card-cover-title">CYBERPUNK 2077</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-genre">Action RPG</span>
+            <span class="card-date">Dec 10, 2020</span>
+          </div>
+          <h3 class="card-title">
+            <a href="reviews/cyberpunk-2077.html">Cyberpunk 2077</a>
+          </h3>
+          <p class="card-excerpt">
+            After a rocky launch, CD Projekt Red's Night City has evolved into one of the most visually stunning and narratively ambitious open worlds in modern gaming.
+          </p>
+          <div class="card-footer">
+            <div class="card-score-wrap">
+              <span class="card-score-label">Score</span>
+              <span class="score-badge" data-score="8.5">8.5</span>
+            </div>
+            <a href="reviews/cyberpunk-2077.html" class="card-link">Read Review →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- No results message -->
+      <div class="no-results" role="status">
+        <h3>No reviews found</h3>
+        <p>Try adjusting your search or filter.</p>
+      </div>
+
+    </div><!-- /.reviews-grid -->
+
+  </main>
+
+  <!-- ── About Section ── -->
+  <section id="about" style="border-top: 1px solid var(--border); padding: 4rem 0; background: #080810;">
+    <div class="container" style="max-width: 700px; text-align: center;">
+      <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 1rem;">About Pixel Verdict</h2>
+      <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+        Pixel Verdict is an independent games criticism outlet dedicated to honest, thoughtful reviews. We play every game to completion before scoring, and we never accept advertising deals that compromise editorial independence. Our scores reflect the full package — gameplay, narrative, performance, and lasting value.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">PIXEL VERDICT</div>
+        <p class="footer-copy">&copy; 2024 Pixel Verdict. All rights reserved. Reviews are the opinion of individual writers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
